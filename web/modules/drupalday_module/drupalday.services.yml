@@ -1,0 +1,3 @@
+services:
+  drupalday.mongo:
+    class: Drupal\drupalday\Services\MongoService

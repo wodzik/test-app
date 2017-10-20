@@ -5,6 +5,14 @@ drupalday.landing-page.get:
   requirements:
     _permission: 'access content'
 
+
+drupalday.mongodbs:
+  path: '/mongo-dbs'
+  defaults:
+    _controller: '\Drupal\drupalday\Controller\DrupalDay::getMongoDbs'
+  requirements:
+    _permission: 'access content'
+
 drupalday.drupaldayform.get:
   path: '/contact_form'
   defaults:
