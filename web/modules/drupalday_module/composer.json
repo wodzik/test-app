@@ -1,0 +1,10 @@
+{
+  "name": "drupal/drupalday_module",
+  "type": "drupal-module"
+  ],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "mongodb/mongodb": "^1.1"
+  }
+}

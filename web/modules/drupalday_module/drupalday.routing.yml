@@ -1,0 +1,23 @@
+drupalday.landing-page.get:
+  path: '/landing-page'
+  defaults:
+    _controller: '\Drupal\drupalday\Controller\DrupalDay::getLandingPage'
+  requirements:
+    _permission: 'access content'
+
+drupalday.drupaldayform.get:
+  path: '/contact_form'
+  defaults:
+    _form: '\Drupal\drupalday\Forms\DrupalDayForm'
+  requirements:
+    _permission: 'access content'
+
+entity.drupalday_contact_entity.collection:
+  path: '/drupalday_contact/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the dictionary_term entity.
+    _entity_list: 'drupalday_contact'
+    _title: 'Contact List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view drupalday_contact entity'

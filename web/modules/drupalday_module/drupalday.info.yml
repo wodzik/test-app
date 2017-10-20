@@ -1,0 +1,4 @@
+name: Drupalday
+type: module
+description: "Drupal day module"
+core: 8.x
